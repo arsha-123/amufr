@@ -1,0 +1,1 @@
+web: gunicorn amufr.wsgi --log-file -
