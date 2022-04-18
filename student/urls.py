@@ -5,6 +5,8 @@ app_name="student"
 
 urlpatterns=[
     path('loginS',views.loginS,name="loginS"),
-    path('registerS',views.registerS,name="registerS"),
     path('forgotpwS',views.forgotpwS,name="forgotpwS"),
+    path('profileS',views.profileS,name="profileS"),
+    path('authenticationS',views.authenticationS,name="authenticationS"),
+    path('chatS',views.chatS,name="chatS"),
 ]

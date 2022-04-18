@@ -1,0 +1,59 @@
+{% extends 'admins/admins_master.html' %}
+{% block admins_content %}
+
+<center><h1 class="heads" style="font-weight: bolder;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;   
+  padding-top: 30px;">Messages</h1></center><br>
+<table class="table shadow">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Email</th>
+      <th scope="col">Massage</th>
+      <th scope="col">Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td></td>
+      <td></td>
+      <td><a class="btn btn-dark" href="{% url 'view' %}">view</a></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td></td>
+      <td></td>
+      <td><a class="btn btn-dark" href="{% url 'view' %}">view</a></td>
+    </tr>
+    <tr> <th scope="row">3</th>
+      <td></td>
+      <td></td>
+      <td><a class="btn btn-dark" href="{% url 'view' %}">view</a></td>
+    </tr>
+    <tr>
+      <th scope="row">1</th>
+      <td></td>
+      <td></td>
+      <td><a class="btn btn-dark" href="{% url 'view' %}">view</a></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td></td>
+      <td></td>
+      <td><a class="btn btn-dark" href="{% url 'view' %}">view</a></td>
+    </tr>
+    <tr> <th scope="row">3</th>
+      <td></td>
+      <td></td>
+      <td><a class="btn btn-dark" href="{% url 'view' %}">view</a></td>
+    </tr>
+  
+  </tbody>
+</table>
+
+  
+
+                   
+{% endblock %}
