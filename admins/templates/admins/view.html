@@ -65,9 +65,10 @@ h1{
 .table{
     /* border: none; */
     margin-left: 40px;
-    border: solid 2px rgba(255, 255, 255, 0);
+    /* border: solid 2px rgba(255, 255, 255, 0); */
   padding-top: 50px;
-  border-color: white;
+  border: solid 2px #fff;
+
 }
 textarea{
     width: 400px;
@@ -92,19 +93,12 @@ textarea{
 .btn{
   margin-left: 300px;
 }
-       /* .a1{
-            color: #fff;
-        }
-        .a1:hover{
-            color: #fff;
-        }
-        .body{
-            background-image: url("{% static 'images/metrob.jpg' %}");
-            height: 660px;
-            width: 100%;
-            background-repeat: no-repeat;
-        } */
-        
+     
+input{
+   border: solid 1px grey;
+   width: 400px;
+}
+       
        
     </style>
 </head>
@@ -113,28 +107,28 @@ textarea{
       
 
          <div class="shadow main">
-             <h1>Message Replay</h1>
+             <h1>Message Reply</h1>
          <table class="table">
             <tbody>
               <tr>
                 <!-- <th scope="row">1</th> -->
                 <td>Name</td>
                 <td>:</td>
-                <td></td>
+                <td><input type="text"></td>
               </tr>
               
               <tr>
                 <!-- <th scope="row">2</th> -->
                 <td>Email id</td>
                 <td>:</td>
-                <td></td>
+                <td><input type="text"></td>
               </tr>
-              <tr>
-                <!-- <th scope="row">2</th> -->
+              <!-- <tr>
+                
                 <td>Contact Number</td>
                 <td>:</td>
                 <td></td>
-              </tr>
+              </tr> -->
               <tr>
                 <!-- <th scope="row">2</th> -->
                 <td>message</td>
@@ -143,7 +137,7 @@ textarea{
               </tr>
               <tr>
                 <!-- <th scope="row">2</th> -->
-                <td>Replay Meassage</td>
+                <td>Reply Meassage</td>
                 <td>:</td>
                 <td><textarea  id="txt2" ></textarea></td>
               </tr>

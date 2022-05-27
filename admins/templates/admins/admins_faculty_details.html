@@ -1,24 +1,13 @@
 {% extends 'admins/admins_master.html' %}
 {% block admins_content %}
 
-<center><h1 class="heads" style="font-weight: bolder;
-  font-family: 'Times New Roman', Times, serif;
-  text-align: center;   
-  padding-top: 30px;">Faculty Details</h1></center>
-
-  <!-- <input type="text" placeholder="search by name"> -->
-
-<!-- <label for="" class="label">Search by Name: <input id="" class="txt" type="text"></label> -->
-<!-- <button type="button" class="btn btn1 btn-warning">Search</button> -->
-
-<!-- <button type="button" class="btn btn-success"><a href="{% url 'faculty:registerS' %}">Add New Student</a></button> -->
+<center><h1 class="heads" style="font-weight: bolder;font-family: 'Times New Roman', Times, serif;text-align: center;padding-top: 30px;">Faculty Details</h1></center>
 
 <nav class="navbar navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand">
-        <!-- <button type="button" class="btn btn-success"><a href="{% url 'registerF' %}" style="color: black; text-decoration: none;">Add New Faculty</a></button> -->
-  </a>
-    <form class="d-flex">
+        </a>
+    <form class="d-flex"  >
       <input class="form-control me-2" type="search" placeholder="Search by Name" aria-label="Search">
       <button class="btn btn-outline-success" type="submit">Search</button>
     </form>
@@ -60,15 +49,13 @@
         </tr>
         
          <tr>
-           <td><button type="button" class="btn btn-dark"><a href="{% url 'registerF' %}" style="color: white; text-decoration: none;">Add New Faculty</a></button></td>
+           <td><button type="button" class="btn btn-dark"><a href="{% url 'faculty_register' %}" style="color: white; text-decoration: none;">Add New Faculty</a></button></td>
            
          </tr>
         
      </form>
  </table>
 
- <!-- <button type="button" class="btn btn2 btn-link"><a href="{% url 'faculty:registerS' %}">Add New Student</a></button>
-               
-  -->
+ 
                    
 {% endblock %}

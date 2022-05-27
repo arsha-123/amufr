@@ -84,25 +84,27 @@
         <div class="container">
             
             <div class="row"> 
-                    <form action="">
+                    <form method="post" action="">
+                        {% csrf_token %}
                         <div class="form-row">
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                <input type="email" id="email" class="form-control" placeholder="Email Address">     
-                                <p id="p1" style=" color: red ;display: none;">*Please enter you email</p>     
+                                <input type="email" id="email" class="form-control" placeholder="Email Address" name="ad_email">     
+                                <span id="email_err" style="margin-left: 10px;"></span>    
                             </div>
                         </div>
 
                         <div class="form-row">
                             <div class="col-lg-6">
-                                <input type="Password" id="password" class="form-control" placeholder="Password">  
-                                <p id="p2" style=" color: red ;display: none;">*please enter your password</p>        
+                                <input type="Password" id="pswrd" class="form-control" placeholder="Password"  name="ad_password">  
+                                <span id="pswrd_err" style="margin-left: 10px;"></span>    
                             </div>
                         </div>
 
                         <div class="form-row">
                             <div class="col-lg-6">
-                                <button id="login" class="btn1 mt-3 mb-5">Login</button>          
+                                <button type="submit" id="id1" class="btn1 mt-3 mb-5" onclick="return admin_login()" >Login</button>  
                             </div>
+                            <span style="color: red; margin-left:50px">{{error}}</span>
                         </div>
                         <div class="aaaa col-lg-12">
                            <a href="{% url 'forgotpw' %}">Forgot Password</a><br><br>
